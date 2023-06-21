@@ -1,0 +1,454 @@
+/*this line to import text families and style that used in this web page*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&family=Roboto+Condensed&family=Roboto+Mono:wght@200&family=Sono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes scale {
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*navigation bar*/
+#navBar{
+    width:100%;
+    height: 50px;
+    background-color: none;
+    margin: 0;
+    padding:0;
+    position: absolute;
+    
+}
+#navBar ul{
+    float:right;
+    height: 70px;
+    width: auto;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
+#navBar h3{
+    float: left;
+    padding-top: 25px;
+    margin:0 0 0 30px;
+    height: 50px;
+    overflow: hidden;
+    color:#fff;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+#navBar ul li{
+    float:left;
+    overflow: hidden;
+    color:#03fc03;
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    padding:20px 10px 5px 10px;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 5px 5px 5px #000;
+}
+#navBar ul li span{
+
+    height: 100%;
+    width: 100%;
+    
+}
+#navBar ul li:hover{
+    border:solid;
+    border-width: 0 0 4px 0;
+    border-color: #03fc03;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: none;
+    
+}
+/*header section*/
+#Header{
+    width: 100%;
+    background-image: url("../header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin:0;
+    display: flex;
+    color: #fff;
+}
+/*header left section*/
+#headerLDiv{
+    float: left;
+    height: 620px;
+    vertical-align: middle;
+    width: 50%;
+    padding: 200px 0 0 3%;
+    
+}
+#Header div p{
+    color:#03fc8c;
+    width: 70%;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #000;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    cursor: default;
+}
+#span1{
+    animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#span2{
+    animation: fade-in 1.5s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#span3{
+    animation: fade-in 1.5s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#Header h1{
+    font-size: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 7px 7px 7px #000;
+    cursor: default;
+}
+/*header right section - input section*/
+#headerRDiv{
+    float: right;
+    height: 620px;
+    vertical-align: middle;
+    width: 50%;
+    padding: 200px 0 0 0;
+    text-align: center;
+}
+#Header input{
+    width:70%;
+    height: 40px;
+    border-radius: 10px;
+    border:solid;
+    border-width: 1px;
+    margin:15px 0 15px 0;
+    padding: 3px 7px 3px 7px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    box-shadow: 5px 5px 5px #000 ;
+    cursor: pointer;
+}
+#Header select{
+    width:75%;
+    height: 50px;
+    border-radius: 10px;
+    border:solid;
+    border-width: 1px;
+    margin:15px 0 15px 0;
+    padding: 3px 7px 3px 7px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Sono', sans-serif;
+    box-shadow: 5px 5px 5px #000 ;
+    outline: none;
+    cursor: pointer;
+}
+#Header input:focus{
+    outline: none;
+}
+#Header div button{
+    width:80px;
+    height: 60px;
+    color:#fff;
+    background: #03fc03;
+    border:solid #03fc03;
+    font-family: 'Roboto Mono', monospace;
+    font-weight:  bold;
+    box-shadow: 5px 5px 5px #000 ;
+    font-size: 20px;
+    cursor: pointer;
+}
+#Header div button:hover{
+    background: #00aa00;
+    border-color: #00aa00;
+}
+/*about us section*/
+#aboutUs{
+    background:rgb(2,0,36);
+    background:rgb(28,28,116);
+    width: 100%;
+    display: flex;
+}
+#aboutUs img{
+    margin: 50px 30px 50px 30px;
+    display: inline;
+    box-shadow: 10px 10px 10px #000;
+}
+#aboutUs div{
+    color:#fff;
+    display: inline;
+}
+#aboutUs div h2{
+    font-size: 36px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+#aboutUs div p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 30px;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+/*contact us section*/
+#contactUs{
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background:rgb(179,0,94);
+    color: #ffffff;
+}
+#contactUs h2{
+    font-size: 45px;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+#contactUs p{
+    font-family: 'Sono', sans-serif;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+#contactUs textarea{
+    height: 250px;
+    width:60%;
+    margin-top: 20px;
+    background: #151519;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #000 ;
+}
+#contactUs button{
+    height: 70px;
+    width: 80px;
+    color:#fff;
+    background:none;
+    border:solid;
+    border-width: 2px;
+    border-color:#fff;
+    margin-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+#contactUs button:hover{
+    background: #fff;
+    color: #B3005E;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #000 ;
+}
+/*footer section*/
+/*this is out team section of the footer section*/
+#footerS1{
+    background-image: url("../footerBg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    
+}
+#footerS1 h3{
+    color:#fff;
+    background: rgba(0,0,1,0.9);
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding: 4px 0 4px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 5px 5px 5px #000;
+    cursor: default;
+}
+#ourTeamD{
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    background-color:rgba(0,0,1,0.5);
+    margin: 0;
+}
+/*our team pics div*/
+.teamDiv{
+    position: relative;
+    border:solid;
+    border-width:4px;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 8px 8px 8px #000;
+}
+/*this div when the mouse get over an img of one of out team his name will be visible*/
+.hiddenDiv{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(1,1,1,0.9);
+    padding-top: 70px;
+    border-radius: 150px;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    opacity: 0;
+    transition: 0.5s ease;
+    cursor: none;
+}
+.teamDiv:hover .hiddenDiv{
+    opacity: 1;
+}
+/*the copyrights section of the footer section*/
+#footerS2{
+    background-color: #171a1f;
+    margin: 0;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+}
+#logContainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(1,1,2,0.9);
+    display: block;
+    top: 0;
+    text-align: center;
+    display: none;
+}
+#logDiv{
+    background-color: #B3005E;
+    width: 50%;
+    margin: 2% 25% 0 25%;
+    background-image: url("../logBg.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 5px #000;
+    
+}
+#logDiv ul{
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    display: flex;
+    font-family: 'Rajdhani', sans-serif;
+}
+#logDiv ul li{
+    width: 12%;
+    list-style: none;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#logDiv ul li:hover{
+    background-color: #000;
+}
+#logClose{
+    width:45px;
+}
+#logDiv input{
+    width:60%;
+    height: 40px;
+    margin: 10px;
+    background: none;
+    border:solid;
+    border-width: 2px 0 2px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-color:#fff;
+    padding-left: 10px;
+    outline: none;
+    font-family: 'Sono', sans-serif;
+    box-shadow: 0px 5px 5px #000 ;
+}
+#logDiv button{
+    height: 45px;
+    width: 80px;
+    background: none;
+    color: #fff;
+    border-color: #fff;
+    border-width: 2px;
+    border:solid;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: 5px 5px 5px #000 ;
+    cursor: pointer;
+}
+#logDiv button:hover{
+    color:rgb(1,1,0);
+    background: #fff;
+}
+#logIn{
+    
+    background-color: rgba(0,0,1,0.7);
+}
+#signUp{
+    display: none;
+    background-color: rgba(0,0,1,0.7);
+}
+#signUp p{
+    color:#fff;
+    font-family: 'Sono', sans-serif;
+    cursor: default;
+}
+#signUp select{
+    width:30%;
+    height: 40px;
+    margin: 10px;
+    background: none;
+    border:solid;
+    border-width: 2px 0 2px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-color:#fff;
+    padding-left: 10px;
+    outline: none;
+    font-family: 'Sono', sans-serif;
+    box-shadow: 0px 5px 5px #000 ;
+    cursor: pointer;
+}
+#signUp select option{
+    width:30%;
+    height: 40px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Sono', sans-serif;
+    box-shadow: 0px 5px 5px #000 ;
+}
+#signUp h4{
+    color:#fff;
+    font-size: 14px;
+    font-family: 'Sono', sans-serif;
+    cursor: default;
+}
+@keyframes fade-in{
+    100%{
+        opacity: 1;
+        filter:blur(0);
+    }
+}
