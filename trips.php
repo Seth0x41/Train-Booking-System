@@ -12,10 +12,6 @@ $arrival_station = (int) $_POST["arrival_station"];
 $userID = $_SESSION['user'];
 
 
-// $sourceId = $departure_station; // Assuming Zag's station ID is 1
-// $destinationId = $arrival_station; // Assuming Alex's station ID is 4
-
-
 function findPath($departure_station, $arrival_station, $connection)
 {
     // Create a queue to store the current path
